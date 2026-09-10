@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/dc-animated-lamp",
+	"version": "0.1.0",
+	"title": "Dc Animated Lamp",
+	"category": "widgets",
+	"icon": "lightbulb",
+	"description": "DC Animated Pendant Lamp.",
+	"example": {},
+	"supports": {
+		"html": false,
+		 "align": ["left", "center", "right", "wide", "full"]
+	},
+	"textdomain": "dc-animated-lamp",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}

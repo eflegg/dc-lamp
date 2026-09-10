@@ -1,0 +1,49 @@
+/*!********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/dc-animated-lamp/style.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear forwards;
+}
+
+.wp-block-create-block-dc-animated-lamp {
+  width: 115px;
+  height: auto;
+}
+
+.light {
+  transform: scale(0.8);
+  opacity: 0;
+}
+.light.on {
+  animation: lightlamp 500ms linear forwards;
+  animation-delay: 1500ms;
+  transform-origin: bottom center;
+}
+
+@keyframes lightlamp {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.cord {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+}
+.cord.drawn {
+  animation: drawcord 3s linear forwards;
+}
+
+@keyframes drawcord {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
