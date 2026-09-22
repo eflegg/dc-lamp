@@ -35,6 +35,7 @@
   }
 }
 .cord {
+  max-height: 700px;
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
 }

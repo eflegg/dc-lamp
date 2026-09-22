@@ -15,8 +15,8 @@
 	<?php esc_html_e('Dc Animated Lamp – hello from a dynamic block!', 'dc-animated-lamp'); ?></p> -->
 
 <div <?php echo get_block_wrapper_attributes(); ?>>
-	<?php echo
-	'<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 112.26 519.13">
+  <?php echo
+  '<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 112.26 519.13">
   <!-- Generator: Adobe Illustrator 30.8.1, SVG Export Plug-In . SVG Version: 2.1.4 Build 1)  -->
   <defs>
     <style>
@@ -32,6 +32,7 @@
     </style>
   </defs>
   <g class="light">
+
     <path class="st1" d="M112.26,474.2c-11.79-12.67-32.52-21.08-56.13-21.08s-44.34,8.41-56.13,21.08h112.26Z"/>
     <path class="st1" d="M102.17,494.77c-9.67-10.39-26.68-17.29-46.04-17.29s-36.37,6.89-46.04,17.29h92.08Z"/>
     <path class="st1" d="M85.69,509.15h0c-6.22-6.67-17.14-11.1-29.57-11.1s-23.35,4.42-29.56,11.1h59.12Z"/>
@@ -39,5 +40,5 @@
   </g>
   <path class="st0 cord" d="M56.13,0v457.15"/>
 </svg>';
-	?>
+  ?>
 </div>

@@ -28,8 +28,33 @@
 console.log('Hello World! (from create-block-dc-animated-lamp block)');
 /* eslint-enable no-console */
 
+//intersection observer photo animation on scroll
+const lamps = document.querySelectorAll('.wp-block-create-block-dc-animated-lamp .light');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('on');
+    }
+  });
+});
+lamps.forEach(el => {
+  observer.observe(el);
+});
+const cords = document.querySelectorAll('.wp-block-create-block-dc-animated-lamp .cord');
+const cordObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('drawn');
+    }
+  });
+});
+cords.forEach(el => {
+  cordObserver.observe(el);
+});
+
 //Vanila waypoints
 const waypointLamps = document.querySelectorAll('.wp-block-create-block-dc-animated-lamp');
+console.log('lamp', waypointLamps);
 const elementIsVisibleInViewport = (el, partiallyVisible = false) => {
   const {
     top,
@@ -46,7 +71,9 @@ const elementIsVisibleInViewport = (el, partiallyVisible = false) => {
 function checkpoints() {
   waypointLamps.forEach(lamp => {
     const light = lamp.querySelector('.light');
+    console.log('light', light);
     const cord = lamp.querySelector('.cord');
+    console.log('cord', cord);
     const visible = elementIsVisibleInViewport(lamp);
     if (visible) {
       lamp.classList.add('faded-in');
